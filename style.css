@@ -5,7 +5,6 @@
   margin: 0 auto;
   position: relative;
 }
-
 .gallery-header {
   display: none;
 }
@@ -27,7 +26,6 @@ img {
   height: 400px;
   object-fit: cover;
 }
-
 .prev-next {
   position: absolute;
   top: 50%;
