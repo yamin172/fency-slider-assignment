@@ -43,7 +43,8 @@ const selectItem = (event, img) => {
   if (item === -1) {
     sliders.push(img);
   } else{
-    
+    let deselect = sliders.indexOf(img);
+    sliders.splice(deselect, 1);
   }
 };
 var timer;
@@ -67,7 +68,7 @@ const createSlider = () => {
   document.querySelector(".main").style.display = "block";
   // hide image aria
   imagesArea.style.display = "none";
-  const duration = document.getElementById("duration").value;
+  const duration = document.getElementById("duration").value || 1000;
   sliders.forEach((slide) => {
     let item = document.createElement("div");
     item.className = "slider-item";
