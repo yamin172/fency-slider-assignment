@@ -32,7 +32,7 @@ const getImages = (query) => {
   )
     .then((response) => response.json())
     .then((data) => showImages(data.hits))
-    .catch((error) => console.log(error));
+    .catch((error) => displayWarning("somthing went to wrong"));
 };
 
 let slideIndex = 0;
